@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Väljastab kasutajale kuupäeva ja ajaga seotud info
+
+today_date="$(date +"Today is %A, %B %d, %Y")"
+time_rn="$(date +"Time is %H:%M")"
+
+year_calendar="$(date +"Calendar of %B %Y")"
+calendar=$(cal | tail -n 7)
+
+echo "$today_date"
+echo "$time_rn"
+
+echo "$year_calendar"
+echo "$calendar"
+
