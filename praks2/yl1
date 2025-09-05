@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Tervitab kes logib sisse
+
+echo "Tere, $USER"
+echo "!"
