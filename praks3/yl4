@@ -1,0 +1,9 @@
+#!/bin/bash
+echo -n "Sisesta reisijate arv grupis: "
+read reisijad
+echo -n "Sisesta kohtade arv ühes bussis: "
+read bussikohad
+tais_busid=$((reisijad / bussikohad))
+alles_reisijad=$((reisijad % bussikohad))
+echo "Täielikult täidetud busse: $tais_busid"
+echo "Allesjäänud inimesi: $alles_reisijad"
