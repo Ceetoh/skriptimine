@@ -1,0 +1,13 @@
+#!/bin/bash
+echo -n "Sisesta reisijate arv grupis: "
+read reisijad
+echo -n "Sisesta kohtade arv ühes bussis: "
+read bussikohad
+tais_busid=$((reisijad / bussikohad))
+alles_reisijad=$((reisijad % bussikohad))
+
+if test $alles_reisijad -gt 0
+then
+    tais_busid=$((tais_busid + 1))
+fi
+echo "Kokku on vaja $tais_busid taisbussi"
