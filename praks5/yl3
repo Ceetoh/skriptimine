@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#Väljastab tervituse numbrile vastava ajaga, mis kasutaja on sisestanud
+
+echo -n "Sisesta kellaaeg: "
+read aeg
+
+if [ $aeg -ge 6 ] && [ $aeg -le 12 ];
+then
+    echo "Tere hommikust!"
+elif [ $aeg -ge 12 ] && [ $aeg -le 18 ];
+then
+    echo "Tere päevast!"
+elif [ $aeg -ge 18 ] && [ $aeg -le 22 ];
+then
+    echo "Tere õhtust!"
+elif [[ ( $aeg -ge 22 && $aeg -le 24 ) || ( $aeg -ge 1 && $aeg -lt 6 ) ]]; 
+then
+    echo "Head ööd!"
+else
+    echo "Vale kellaaeg"
+fi
