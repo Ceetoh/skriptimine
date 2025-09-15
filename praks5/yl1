@@ -1,0 +1,19 @@
+#!/bin/bash
+echo -n "Sisesta oma vanus: "
+read vana
+
+if (test $vana -gt 0 -a $vana -lt 11)
+then 
+        echo "Oled laps"
+elif (test $vana -ge 11 -a $vana -lt 18)
+then
+        echo "Oled nooruk"
+elif (test $vana -ge 18 -a $vana -lt 63)
+then
+        echo "Oled täiskasvanu"
+elif (test $vana -ge 63)
+then
+        echo "Oled senioor"
+else
+        echo "Vigane sisend"
+fi
