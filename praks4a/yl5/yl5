@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo -n "Sisesta kataloogi tee, mida soovid varundada: "
+read KATALOOG
+
+KUUPAEV=$(date +%d%b%Y)
+
+KATALOOGI_NIMI=$(basename "$KATALOOG")
+tar -czf backup/$KATALOOGI_NIMI.backup.$KUUPAEV.tar.gz "$KATALOOG"
+
+echo "Teen varukoopia kataloogist '$KATALOOG' ja salvestan faili 'backup/$KATALOOGI_NIMI.backup.$KUUPAEV.tar.gz'"
+
+
+
+
+
+
