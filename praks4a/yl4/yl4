@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo -n "Sisesta kataloogi tee, mida soovid varundada: "
+read KATALOOG
+
+KATALOOGI_NIMI=$(basename "$KATALOOG")
+tar -czf backup/$KATALOOGI_NIMI.backup.tar.gz "$KATALOOG"
+
+echo "Teen varukoopia kataloogist '$KATALOOG' ja salvestan faili 'backup/$KATALOOGI_NIMI.backup.tar.gz'"
