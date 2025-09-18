@@ -1,0 +1,7 @@
+#!/bin/bash
+# See skript teeb kaustast ./test backupi ja salvestab selle ./backup/test.backup.tar.gz
+
+echo "Teen varukoopia kaustast './test' ja salvestan selle './backup/test.backup.tar.gz'"
+
+tar -czf backup/test.backup.tar.gz test
+
