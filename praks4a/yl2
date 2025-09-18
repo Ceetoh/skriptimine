@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo -n "Sisesta oma ringi raadius (sentimeetrites): "
+read raadius
+
+pi=3.14159
+pindala=$(echo "$pi * $raadius * $raadius" | bc)
+umbermoot=$(echo "2 * $pi * $raadius" | bc)
+
+echo "Sinu ringi pindala on $pindala ruutsentimeetrid ja ümbermõõt on $umbermoot cm."
