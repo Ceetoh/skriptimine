@@ -1,0 +1,18 @@
+#!/bin/bash
+echo -n "Sisesta ridade arv: "
+read readArv
+
+echo -n "Sisesta tärnide arv reas: "
+read tarnideArv
+
+for (( rida=1; rida<=readArv; rida++ ))
+do
+  echo -n "$rida. "
+
+  for (( t=1; t<=tarnideArv; t++ ))
+  do
+    echo -n "* "
+  done
+
+  echo ""
+done
