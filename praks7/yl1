@@ -1,0 +1,5 @@
+#!/bin/bash
+for rida in {1..5}
+do
+  echo "$rida. * * * * *"
+done
