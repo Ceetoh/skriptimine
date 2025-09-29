@@ -1,0 +1,18 @@
+#!/bin/bash
+# Autor: Martin Pihlapuu
+# Faili nimi: kujund
+# Kirjeldus: Skript kuvab kujundi, kus iga järgmine rida on üks tärn vähem kui eelmine.
+
+# Küsi kasutajalt ridade arv
+echo -n "Sisesta ridade arv: "
+read readArv
+
+# Loop, mis prindib kujundi
+for (( rida=readArv; rida>=1; rida-- ))
+do
+  for (( t=1; t<=rida; t++ ))
+  do
+    echo -n "* "
+  done
+  echo
+done
