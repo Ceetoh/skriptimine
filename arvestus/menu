@@ -1,0 +1,30 @@
+#!/bin/bash
+# Autor: Martin Pihlapuu
+# Faili nimi: menu
+# Kirjeldus: Skript kuvab toidumenüü ja annab vastuse vastavalt kasutaja valikule.
+
+# Kuvame menüü
+echo "Vali oma toit:"
+echo "1) Liha ja kartulid"
+echo "2) Kala ja krõpsud"
+echo "3) Supp ja salat"
+
+# Küsimus kasutajale
+echo -n "Tee oma valik (1 või 2 või 3): "
+read valik
+
+# Kontrollime kasutaja sisestust ja kuvame vastava väljundi
+case $valik in
+  1)
+    echo "Väga maitsev, aga jälgi oma tervist!"
+    echo "Head isu!"
+    ;;
+  2)
+    echo "Brititoit on maitsev!"
+    echo "Head isu!"
+    ;;
+  3)
+    echo "Nii tervislik ja igav..."
+    echo "Head isu!"
+    ;;
+esac
