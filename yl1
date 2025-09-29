@@ -1,0 +1,13 @@
+#!/bin/bash
+# Autor: Martin Pihlapuu
+# Skripti nimi: info
+# Kirjeldus: Skript tervitab kasutajat ja kuvab hetke kuupäeva ja kellaaja.
+
+# Tervitab sisselogitud kasutajat
+kasutaja=$USER
+echo "Tere, $kasutaja!"
+
+# Kuvab kuupäeva ja aja kujul "Täna on xx.xx.xxxx kell x:xx"
+kuupaev=$(date +"%d.%m.%Y")
+aeg=$(date +"%H:%M")
+echo "Täna on $kuupaev kell $aeg"
